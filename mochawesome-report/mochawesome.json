@@ -1,0 +1,179 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-07T15:55:45.554Z",
+    "end": "2022-04-07T15:56:08.783Z",
+    "duration": 23229,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "509f2ef9-f30c-4121-9237-56ad46a2b76b",
+      "title": "",
+      "fullFile": "cypress/integration/Validatelogin.js",
+      "file": "cypress/integration/Validatelogin.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e397ec90-1bf7-451f-b673-25af551ca832",
+          "title": "Validate login page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login validation",
+              "fullTitle": "Validate login page login validation",
+              "timedOut": null,
+              "duration": 12152,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://login.sentryc.com/auth/login');\ncy.get(':nth-child(1) > .base-borders').type('abc@gmail.com');\ncy.get(':nth-child(2) > .base-borders').type('Abc123$$');\ncy.get('form').submit();",
+              "err": {},
+              "uuid": "a378c523-3f77-4967-9c14-3cc8dcff8515",
+              "parentUUID": "e397ec90-1bf7-451f-b673-25af551ca832",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invalid login validation",
+              "fullTitle": "Validate login page invalid login validation",
+              "timedOut": null,
+              "duration": 221,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://login.sentryc.com/auth/login');\ncy.get(':nth-child(1) > .base-borders').type('abc@gmail.com');\ncy.get(':nth-child(2) > .base-borders').type('Xyz321$$');\ncy.get('form').submit();",
+              "err": {},
+              "uuid": "58f40efe-5a16-4cb8-baeb-b8f530f5941c",
+              "parentUUID": "e397ec90-1bf7-451f-b673-25af551ca832",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "forgot password page",
+              "fullTitle": "Validate login page forgot password page",
+              "timedOut": null,
+              "duration": 1657,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://login.sentryc.com/auth/login');\ncy.get(':nth-child(4) > .base-text').click();",
+              "err": {},
+              "uuid": "b80b8e56-e6b3-41c9-bcaa-d27831d4b409",
+              "parentUUID": "e397ec90-1bf7-451f-b673-25af551ca832",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "forgot password page validation",
+              "fullTitle": "Validate login page forgot password page validation",
+              "timedOut": null,
+              "duration": 2425,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://login.sentryc.com/auth/login');\ncy.get(':nth-child(4) > .base-text').click();\ncy.get(':nth-child(1) > .base-borders').type('abc@gmail.com');\ncy.get('form').submit();",
+              "err": {},
+              "uuid": "819217fd-bac7-4470-8194-aa7cbadb1d6a",
+              "parentUUID": "e397ec90-1bf7-451f-b673-25af551ca832",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Terms and Conditions page page validation",
+              "fullTitle": "Validate login page Terms and Conditions page page validation",
+              "timedOut": null,
+              "duration": 161,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://login.sentryc.com/auth/login');\ncy.get('[href=\"/terms\"]').click();\ncy.visit('https://login.sentryc.com/auth/login');\ncy.get('[href=\"/conditions\"]').click();",
+              "err": {},
+              "uuid": "16cc593a-53aa-409a-8ad4-30869530f28b",
+              "parentUUID": "e397ec90-1bf7-451f-b673-25af551ca832",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a378c523-3f77-4967-9c14-3cc8dcff8515",
+            "58f40efe-5a16-4cb8-baeb-b8f530f5941c",
+            "b80b8e56-e6b3-41c9-bcaa-d27831d4b409",
+            "819217fd-bac7-4470-8194-aa7cbadb1d6a",
+            "16cc593a-53aa-409a-8ad4-30869530f28b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16616,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
